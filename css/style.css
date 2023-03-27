@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;400;700;900&display=swap');
+:root{/* Hace referencia al html */
+    --color1: #2B2E5B;
+    --color2: #274073;
+    --color3: #EECC37;
+    --color4: #F28A2E;
+    --color5: #F24E29;
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
+    --gris-claro: #CCCCCC;
+    --gris-oscuro: #333333;
+}
+body{
+    font-family: 'Jost', sans-serif;
+}
+figure{
+    margin-bottom: 0;
+}
+h1{
+    font-weight: 900;
+    font-size: 36px;
+}
+h1 a{
+    color: var(--color-negro);
+    text-decoration: none;
+}
+h1 a:hover{
+    color: var(--color-negro);
+}
+h2{
+    font-weight: 200;
+    font-size: 32px;
+}
+h3{
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+#main-header{
+    background-color: var(--color3);
+    color: var(--color-negro);
+}
+#main-header h1{
+    margin-bottom: 0;
+}
+#main-header p{
+    margin-bottom: 0;
+}
+#top-bar{
+    z-index: 2000;
+}
+#nosotros{
+    background-color: var(--color1);
+    color: var(--color-blanco);
+}
+#noticias{
+    color: var(--gris-oscuro);
+}
+#historia{
+    background-color: var(--color5);
+    color: var(--color-blanco);
+}
+#valores{
+    background-color: var(--color3);
+    color: var(--color-negro);
+    text-align: center;
+}
+#valores i{
+    font-size: 32px;
+    color: var(--color-blanco);
+}
+#main-footer{
+    background-color: var(--gris-oscuro);
+    color: var(--gris-claro);
+    padding: 45px 0;
+}
+
+.padded{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.carousel-indicators [data-bs-target] {
+    height: 30px;
+    border-radius: 50%;
+}
+
+#noticias .container{
+    position: relative;
+}
+
+#btnBlancoNegro{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+#galeria figure{
+    position: relative;
+}
+#galeria figure figcaption{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+    color: var(--color-blanco);
+}
+#galeria figure figcaption div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+#galeria figure figcaption div i{
+    cursor: pointer;
+}
+
+#paises{
+    background-color: var(--color3);
+}
+
+#fondo-oscuro{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#fondo-oscuro img{
+    max-height: 75%;
+    width: auto;
+}
+#page-header{
+    background-color: #EEEEEE;
+    padding: 15px 0;
+    color: #777777;
+    /*
+    -webkit-text-stroke-color: #AAAAAA;
+    -webkit-text-stroke-width: 1px;
+    */
+}
+.card {
+    height: 100%!important;
+}
+#cards-productos .card{
+    text-align: center;
+}
